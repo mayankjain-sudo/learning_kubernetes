@@ -1,0 +1,18 @@
+Deployment will automatically create the RS and pods. Deployment is responsible for AH and 0 down time in K8s.
+Deployment will take help of RS for doing this. 
+RS is the K8s controller which is actually doing the AH in K8s. RS ensure that the specific behaviour is implemented which is mentioned in deployment.
+
+# To create deployment 
+kubectl apply -f nginx-deployment.yaml
+
+# To check the pods after deployment 
+kubectl get pods
+
+# To check deployment 
+kubectl get deploy
+
+# To check Replica Set 
+kubectl get rs
+
+# To watch the pods
+kubectl get pods -w

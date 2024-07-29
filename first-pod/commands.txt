@@ -9,9 +9,15 @@ kubectl get pods -o wide
 # To delete the pods 
 kubectl delete pod podname
 
+# Debug the application 
+kubectl logs pods podname
+
+#To get all the status of pod
+kubectl describe pod nginx
+
 # To login to local cluster 
 minikube ssh
 to login to the Actual cluster we will ssh to master node or any worker node.
-
+ssh -i <identity file> nodename/IP address of cluster
 # Kubectl Cheet sheet link below
 https://kubernetes.io/docs/reference/kubectl/quick-reference/
