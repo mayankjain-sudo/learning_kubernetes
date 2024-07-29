@@ -1,0 +1,17 @@
+# To create first pod on the cluster
+kubectl create -f first-simple-pod.yaml
+
+# To get the pods 
+kubectl get pods
+or to get entire details of pods 
+kubectl get pods -o wide
+
+# To delete the pods 
+kubectl delete pod podname
+
+# To login to local cluster 
+minikube ssh
+to login to the Actual cluster we will ssh to master node or any worker node.
+
+# Kubectl Cheet sheet link below
+https://kubernetes.io/docs/reference/kubectl/quick-reference/
