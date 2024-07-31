@@ -32,8 +32,8 @@ minikube service <service-name> --url runs as a process, creating a tunnel to th
         ❗  Because you are using a Docker driver on darwin, the terminal needs to be open to run it.
 
 Check ssh tunnel in another terminal
-    >   ps -ef | grep docker@127.0.0.1
-        ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -N docker@127.0.0.1 -p 55972 -i /Users/FOO/.minikube/machines/minikube/id_rsa -L TUNNEL_PORT:CLUSTER_IP:TARGET_PORT
+    > ps -ef | grep docker@127.0.0.1
+      ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -N docker@127.0.0.1 -p 55972 -i /Users/FOO/.minikube/machines/minikube/id_rsa -L TUNNEL_PORT:CLUSTER_IP:TARGET_PORT
 
   
 In my case Tunner port is 60003
