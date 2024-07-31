@@ -11,8 +11,8 @@ But since the repo is old it will not work as aspected, we need some modificatio
     __rm /usr/lib/python*/EXTERNALLY-MANAGED &&__
 2. When you try to run deployment you will face issue of "ImagePullBackOff" which cause no pods running.
     To fix the above issue you need to first add your local image which you created into minikube cluster since I am using minikube for my learning. You can add the image in minikube by running below command on your terminal. \
-    *** minikube cache add ImageName *** \
-    Note: "minikube cache" will be deprecated in upcoming versions, please switch to "minikube image load" 
+    __minikube cache add ImageName__ \
+    __Note:__ "minikube cache" will be deprecated in upcoming versions, please switch to __minikube image load__
 
 ## Commands used in this project 
     > kubectl apply -f deployment.yaml
