@@ -5,13 +5,13 @@ In this example we will learn Kubernetes service. This is simple python applicat
 
 But since the repo is old it will not work as aspected, we need some modification in the code.
 
-1. When you try to build image locally from the Docker file from above link you will get below error 
-    *** This environment is externally managed ***
-    To fix the above error you need to add the below lines in the Dockerfile which I already added in my Dockerfile.
-    *** rm /usr/lib/python*/EXTERNALLY-MANAGED && \ ***
+1. When you try to build image locally from the Docker file from above link you will get below error \
+    __This environment is externally managed__
+    To fix the above error you need to add the below lines in the Dockerfile which I already added in my Dockerfile. \
+    __rm /usr/lib/python*/EXTERNALLY-MANAGED &&__
 2. When you try to run deployment you will face issue of "ImagePullBackOff" which cause no pods running.
-    To fix the above issue you need to first add your local image which you created into minikube cluster since I am using minikube for my learning. You can add the image in minikube by running below command on your terminal.
-    *** minikube cache add ImageName ***
+    To fix the above issue you need to first add your local image which you created into minikube cluster since I am using minikube for my learning. You can add the image in minikube by running below command on your terminal. \
+    *** minikube cache add ImageName *** \
     Note: "minikube cache" will be deprecated in upcoming versions, please switch to "minikube image load" 
 
 ## Commands used in this project 
