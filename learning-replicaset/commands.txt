@@ -1,0 +1,11 @@
+kubectl create -f replicaset-defination.yaml
+kubectl get replicaset
+kubectl delete replicaset replicasetName
+Below are few way to update the replicaset.
+kubectl edit replicaset replicasetname
+kubectl replace -f replicaset-defination.yaml
+kubectl scale --replicas=6 -f replicaset-defination.yaml
+kubectl scale --replicas=6 replicaset my-replicaset
+                             <Type>     <Name>
+
+Note : To update via file we need to update the file first with desire replicaset.
