@@ -1,0 +1,10 @@
+# low-prio-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: low-prio-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  priorityClassName: low-priority
