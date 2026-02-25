@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
+  initContainers:
+    - name: init-myservice
+      image: busybox
+      command: ['sh', '-c', 'echo WAIT FOR DB START.sh'] 
+    - name: api-checker
+      image: busybox
+      command: ['sh', '-c', 'echo WAIT FOR API START.sh']
